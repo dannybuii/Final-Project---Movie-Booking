@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="361.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginScreen">
+   <children>
+      <ImageView fitHeight="410.0" fitWidth="649.0" layoutX="-5.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/spirited-away-wallpapers-29910-992544%20HD.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="30.0" prefHeight="284.0" prefWidth="249.0" style="-fx-background-color: #6DACA5;">
+         <children>
+            <JFXButton fx:id="next" layoutX="14.0" layoutY="167.0" onAction="#onEnter" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: white;" text="Log in" textFill="#171717" />
+            <JFXTextField fx:id="usernameTxt" focusColor="WHITE" layoutX="14.0" layoutY="82.0" prefHeight="25.0" prefWidth="217.0" promptText="username/email" unFocusColor="WHITE" />
+            <JFXPasswordField fx:id="passwordTxt" focusColor="WHITE" layoutX="14.0" layoutY="129.0" prefHeight="25.0" prefWidth="217.0" promptText="password" unFocusColor="WHITE" />
+            <Label layoutX="90.0" layoutY="29.0" prefHeight="27.0" prefWidth="60.0" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="quitButton" layoutX="26.0" layoutY="245.0" onAction="#quitProgram" prefHeight="25.0" prefWidth="194.0" style="-fx-background-color: white;" text="Quit" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

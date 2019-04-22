@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6DACA5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane style="-fx-background-color: #6DACA5;">
+         <children>
+            <VBox layoutY="360.0" prefHeight="40.0" prefWidth="206.0">
+               <children>
+                  <JFXButton fx:id="calculateButton" onAction="#calculatePrice" prefHeight="0.0" prefWidth="204.0" style="-fx-background-radius: 30 0 0 30; -fx-background-color: #6DACA5;" text="Calculate" textFill="WHITE" />
+               </children></VBox>
+            <JFXTextField fx:id="numAdultTxt" focusColor="WHITE" layoutX="16.0" layoutY="113.0" prefHeight="25.0" prefWidth="183.0" promptText="Enter the # of Adults watching" unFocusColor="WHITE" />
+            <JFXTextField fx:id="numKidTxt" focusColor="WHITE" layoutX="16.0" layoutY="64.0" prefHeight="25.0" prefWidth="183.0" promptText="Enter the # of Kid watching" unFocusColor="WHITE" />
+            <JFXTextField fx:id="movieTxt" focusColor="WHITE" layoutX="16.0" layoutY="23.0" prefHeight="25.0" prefWidth="183.0" promptText="Enter the name of Movies" unFocusColor="WHITE" />
+            <JFXTextField fx:id="numSeniorsTxt" focusColor="WHITE" layoutX="16.0" layoutY="175.0" prefHeight="25.0" prefWidth="183.0" promptText="Enter the # of Seniors watching" unFocusColor="WHITE" />
+            <TextArea fx:id="outputTxt" layoutX="12.0" layoutY="306.0" prefHeight="40.0" prefWidth="183.0" style="-fx-background-color: #EBF7F9;" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="logoutButton" layoutX="450.0" layoutY="21.0" onAction="#logOut" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #EBF7F9;" text="Log out" />
+      <ImageView fx:id="myImage" fitHeight="292.0" fitWidth="195.0" layoutX="300.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/41jOy+rrcHL%20(1).jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="next" layoutX="414.0" layoutY="349.0" onAction="#changeImage" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #EBF7F9;" text="Next" />
+      <JFXButton fx:id="back" layoutX="238.0" layoutY="349.0" onAction="#changeImageBack" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #EBF7F9;" text="Previous" />
+   </children>
+</AnchorPane>
